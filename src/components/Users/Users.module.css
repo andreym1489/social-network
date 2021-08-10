@@ -1,0 +1,11 @@
+img {
+    width: 50px;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+.container {
+    margin: 30px;
+}
