@@ -1,5 +1,9 @@
-img {
-    width: 50px;
+.userItem img {
+    width: 100px;
+}
+
+.userItem {
+    margin-bottom: 30px;
 }
 
 .selectedPage {

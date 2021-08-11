@@ -10,6 +10,8 @@ const Users = (props) => {
         pages.push(i);
     }
 
+    console.log(props.users)
+
     return (
         <div className={s.container}>
             {

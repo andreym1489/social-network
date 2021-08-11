@@ -1,15 +1,15 @@
-
 import userPhoto from '../../assets/images/ava.jpg';
 import React from "react";
 import {NavLink} from "react-router-dom";
 import {usersAPI} from "../../API/API";
+import s from "./User.module.css"
 
 const User = (props) => {
     return (
         <div>
             <span>
                 <div>
-                    <NavLink to={`/profile/${props.user.id}`}>
+                    <NavLink to={`/social-network/profile/${props.user.id}`}>
                         <img src={props.user.photos.small !== null ? props.user.photos.small : userPhoto}/>
                     </NavLink>
                 </div>
@@ -24,14 +24,16 @@ const User = (props) => {
                 </div>
             </span>
             <span>
-                <span>
-                    <div>{props.user.name}</div>
-                    <div>{props.user.status}</div>
-                </span>
-                <span>
-                    <div>u.location.country</div>
-                    <div>u.location.city</div>
-                </span>
+                <div className={s.userItem}>
+                    <div>
+                        <b>Name</b>: {props.user.name}
+                    </div>
+                    <div>
+                        <b>Status</b>: {props.user.status
+                                        ? props.user.status
+                                        : 'No status'}
+                    </div>
+                </div>
             </span>
         </div>
     );

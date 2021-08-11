@@ -3,5 +3,9 @@
 }
 
 .descriptionBlock img {
-    width: 50px;
+    width: 100px;
+}
+
+.contact {
+    padding-left: 10px;
 }

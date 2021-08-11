@@ -4,7 +4,7 @@ import React from "react";
 import AddPostFormRedux from "./AddPostForm";
 
 const MyPosts = (props) => {
-    let postElements = props.posts.map(p => <Post message={p.message} likeCounts={p.likeCounts} />);
+    let postElements = props.posts.map(p => <Post key={p} message={p.message} likeCounts={p.likeCounts} />);
 
     const onSubmit = (data) => {
         props.addPost(data.newPostBody);
