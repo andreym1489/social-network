@@ -27,7 +27,7 @@ class App extends React.Component {
                 <HeaderContainer/>
                 <Navbar/>
                 <div className='app-wrapper-content'>
-                    <Route path="/profile/:userId?"
+                    <Route path="../profile/:userId?"
                            render={withSuspense(ProfileContainer)}/>
                     <Route path="/dialogs"
                            render={withSuspense(DialogsContainer)}/>
