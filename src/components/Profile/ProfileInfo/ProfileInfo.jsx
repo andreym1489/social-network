@@ -26,10 +26,6 @@ const ProfileInfo = (props) => {
 
     return (
         <div>
-            <div className={s.head}>
-                <img src="https://coolwallpapers.me/picsup/2513870-mountains-images-desktops.jpg" />
-            </div>
-
             <div className={s.descriptionBlock}>
                 <img src={props.profile.photos.large ? props.profile.photos.large : ava}/>
                 { props.isOwner && <input type="file" onChange={onMainPhotoSelected}/> }
